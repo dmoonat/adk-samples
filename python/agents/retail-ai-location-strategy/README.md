@@ -325,38 +325,52 @@ Each agent reads from and writes to a shared session state, enabling seamless da
 
 ```
 retail-ai-location-strategy/
-├── Makefile                 # Build and run commands
-├── pyproject.toml           # Dependencies and package config
-├── .env.example             # Environment template
-├── README.md                # This file
-├── DEVELOPER_GUIDE.md       # Detailed developer documentation
+├── Makefile                          # Build and run commands
+├── pyproject.toml                    # Dependencies and package config
+├── .env.example                      # Environment template
+├── README.md                         # This file
+├── DEVELOPER_GUIDE.md                # Detailed developer documentation
 │
-├── notebook/                # Original Gemini API notebook
+├── notebook/                         # Original Gemini API notebook
 │   └── retail_ai_location_strategy_gemini_3.ipynb
 │
-└── app/                     # Agent package (exported as root_agent)
-    ├── __init__.py          # Exports root_agent for ADK discovery
-    ├── agent.py             # SequentialAgent pipeline definition
-    ├── config.py            # Model selection and retry config
-    ├── .env                 # Environment variables (from .env.example)
+└── app/                              # Agent package (exported as root_agent)
+    ├── __init__.py                   # Exports root_agent for ADK discovery
+    ├── agent.py                      # SequentialAgent pipeline definition
+    ├── config.py                     # Model selection and retry config
+    ├── .env                          # Environment variables (from .env.example)
     │
-    ├── sub_agents/          # 7 specialized agents
-    │   ├── intake_agent.py
-    │   ├── market_research.py
-    │   ├── competitor_mapping.py
-    │   ├── gap_analysis.py
-    │   ├── strategy_advisor.py
-    │   ├── report_generator.py
-    │   └── infographic_generator.py
+    ├── sub_agents/                   # 7 specialized agents
+    │   ├── competitor_mapping/
+    │   │   ├── __init__.py
+    │   │   └── agent.py
+    │   ├── gap_analysis/
+    │   │   ├── __init__.py
+    │   │   └── agent.py
+    │   ├── infographic_generator/
+    │   │   ├── __init__.py
+    │   │   └── agent.py
+    │   ├── intake_agent/
+    │   │   ├── __init__.py
+    │   │   └── agent.py
+    │   ├── market_research/
+    │   │   ├── __init__.py
+    │   │   └── agent.py
+    │   ├── report_generator/
+    │   │   ├── __init__.py
+    │   │   └── agent.py
+    │   └── strategy_advisor/
+    │       ├── __init__.py
+    │       └── agent.py
     │
-    ├── tools/               # Custom function tools
-    │   ├── places_search.py         # Google Maps Places API
-    │   ├── html_report_generator.py # Executive report generation
-    │   └── image_generator.py       # Infographic generation
+    ├── tools/                        # Custom function tools
+    │   ├── places_search.py          # Google Maps Places API
+    │   ├── html_report_generator.py  # Executive report generation
+    │   └── image_generator.py        # Infographic generation
     │
-    ├── schemas/             # Pydantic output schemas
-    ├── callbacks/           # Pipeline lifecycle callbacks
-    └── frontend/            # AG-UI interactive dashboard (optional)
+    ├── schemas/                      # Pydantic output schemas
+    ├── callbacks/                    # Pipeline lifecycle callbacks
+    └── frontend/                     # AG-UI interactive dashboard
 ```
 
 ---
