@@ -50,16 +50,14 @@ from google.adk.agents import SequentialAgent
 from google.adk.agents.llm_agent import Agent
 from google.adk.tools.agent_tool import AgentTool
 
-from .sub_agents import (
-    intake_agent,
-    market_research_agent,
-    competitor_mapping_agent,
-    gap_analysis_agent,
-    strategy_advisor_agent,
-    report_generator_agent,
-    infographic_generator_agent,
-)
 
+from .sub_agents.intake_agent.agent import intake_agent
+from .sub_agents.market_research.agent import market_research_agent
+from .sub_agents.competitor_mapping.agent import competitor_mapping_agent
+from .sub_agents.gap_analysis.agent import gap_analysis_agent
+from .sub_agents.strategy_advisor.agent import strategy_advisor_agent
+from .sub_agents.infographic_generator.agent import infographic_generator_agent
+from .sub_agents.report_generator.agent import report_generator_agent
 
 from .config import FAST_MODEL, APP_NAME
 

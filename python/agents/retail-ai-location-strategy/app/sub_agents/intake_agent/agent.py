@@ -26,7 +26,7 @@ from google.adk.agents.callback_context import CallbackContext
 from google.genai import types
 from pydantic import BaseModel, Field
 
-from ..config import FAST_MODEL, RETRY_INITIAL_DELAY, RETRY_ATTEMPTS
+from ...config import FAST_MODEL, RETRY_INITIAL_DELAY, RETRY_ATTEMPTS
 
 
 class UserRequest(BaseModel):
