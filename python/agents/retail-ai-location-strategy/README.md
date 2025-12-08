@@ -263,6 +263,10 @@ This starts:
 
 Open `http://localhost:3000` to see the interactive dashboard.
 
+<p align="center">
+  <img src="assets/gifs/ag-ui-demo.gif" alt="AG-UI Frontend Demo" width="700">
+</p>
+
 <details>
 <summary>Manual Setup (Alternative)</summary>
 
@@ -275,7 +279,7 @@ python main.py
 
 # Terminal 2: Start the frontend
 cd app/frontend
-npm install --legacy-peer-deps
+npm install
 cp .env.local.example .env.local
 npm run dev
 # Runs at http://localhost:3000
