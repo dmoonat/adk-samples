@@ -25,7 +25,7 @@ A multi-agent AI pipeline for retail site selection, built with [Google Agent De
 </table>
 
 <p align="center">
-  <img src="assets/images/hero-image.png" alt="Retail AI Location Strategy - Multi-Agent Pipeline" width="700">
+  <img src="assets/images/main-intro-image.png" alt="Retail AI Location Strategy - System Architecture" width="800">
 </p>
 
 ## What It Does
@@ -37,10 +37,6 @@ Given a location and business type, this pipeline automatically:
 - Calculates viability scores with Python code execution
 - Generates strategic recommendations with extended reasoning
 - Produces an HTML executive report and visual infographic
-
-<p align="center">
-  <img src="assets/images/simplified-pipeline.png" alt="7-Stage Pipeline Flow" width="700">
-</p>
 
 ---
 
