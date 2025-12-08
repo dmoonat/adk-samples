@@ -10,16 +10,28 @@ A multi-agent AI pipeline for retail site selection, built with [Google Agent De
   </thead>
   <tbody>
     <tr>
-      <td>🏗️</td>
-      <td><strong>Production-Ready:</strong> Built with ADK for seamless deployment to <a href="https://cloud.google.com/run">Google Cloud Run</a> and <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview">Vertex AI Agent Engine</a>.</td>
-    </tr>
-    <tr>
       <td>🔍</td>
-      <td><strong>Multi-Agent Pipeline:</strong> 7 specialized agents for market research, competitor mapping, gap analysis, strategy recommendations, and report generation.</td>
+      <td><strong>Multi-Agent Pipeline:</strong> 7 specialized agents for market research, competitor mapping, gap analysis, strategy synthesis, and report generation.</td>
     </tr>
     <tr>
       <td>🗺️</td>
-      <td><strong>Real-World Data:</strong> Integrates Google Maps Places API for competitor mapping and live web search for market research.</td>
+      <td><strong>Real-World Data:</strong> Integrates Google Maps Places API for competitor mapping and Google Search for live market research.</td>
+    </tr>
+    <tr>
+      <td>🐍</td>
+      <td><strong>Code Execution:</strong> Python/pandas analysis for quantitative gap analysis with viability scoring.</td>
+    </tr>
+    <tr>
+      <td>🎨</td>
+      <td><strong>AI-Generated Outputs:</strong> Executive HTML reports and infographics via Gemini's native image generation.</td>
+    </tr>
+    <tr>
+      <td>🖥️</td>
+      <td><strong>AG-UI Frontend:</strong> Optional interactive dashboard with <a href="https://docs.ag-ui.com/">AG-UI Protocol</a> and <a href="https://docs.copilotkit.ai/">CopilotKit</a> for real-time pipeline visualization.</td>
+    </tr>
+    <tr>
+      <td>🏗️</td>
+      <td><strong>Production-Ready:</strong> Deploy to <a href="https://cloud.google.com/run">Cloud Run</a> or <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview">Vertex AI Agent Engine</a> via <a href="https://goo.gle/agent-starter-pack">Agent Starter Pack</a>.</td>
     </tr>
   </tbody>
 </table>
